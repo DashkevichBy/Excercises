@@ -17,6 +17,7 @@ public class TestFlowTutBy {
 		WebElement commercialLink = (new WebDriverWait(driver, 10)).until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//a[contains(@href, 'https://tutby.com/advert/price/')]")));
 
+				
 		commercialLink.click();
 
 		Thread.sleep(1000);
