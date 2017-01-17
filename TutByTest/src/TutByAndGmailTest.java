@@ -6,7 +6,6 @@ public class TutByAndGmailTest {
 		RunGmailTest gTest = new RunGmailTest();
 		RunTutByTest tTest = new RunTutByTest();
 
-		
 		gTest.runGmailTest();
 		tTest.runTutByTest();
 	}
