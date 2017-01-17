@@ -24,7 +24,7 @@ public class TutByTest {
 
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 
-			TestFlow.testFlowSteps(driver);
+			TestFlowTutBy.testFlowSteps(driver);
 
 			browser = Browsers.Chrome;
 			
@@ -37,7 +37,7 @@ public class TutByTest {
 
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 
-			TestFlow.testFlowSteps(driver);
+			TestFlowTutBy.testFlowSteps(driver);
 			
 			break;
 		}

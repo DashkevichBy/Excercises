@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestFlow {
+public class TestFlowTutBy {
 
 	public static void testFlowSteps(WebDriver driver) throws InterruptedException {
 
