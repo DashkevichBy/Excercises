@@ -7,7 +7,9 @@ public class RunTutByTest {
 
 	BrowsersList.Browsers browser = BrowsersList.Browsers.FireFox;
 
-	public void runTutByTest(WebDriver driver) throws InterruptedException {
+	public void runTutByTest() throws InterruptedException {
+		
+		WebDriver driver;
 
 		switch (browser) {
 

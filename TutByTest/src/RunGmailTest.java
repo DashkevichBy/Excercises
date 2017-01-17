@@ -1,17 +1,22 @@
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class RunGmailTest {
 
 	BrowsersList.Browsers browser = BrowsersList.Browsers.FireFox;
 
-	public void runGmailTest(WebDriver driver) throws InterruptedException {
+	public void runGmailTest() throws InterruptedException {
+		
+		WebDriver driver;
 
 		switch (browser) {
 		case FireFox:
 
 			System.setProperty("webdriver.gecko.driver", "./src/Recources/geckodriver.exe");
+			
+			driver= new FirefoxDriver();
 
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 
