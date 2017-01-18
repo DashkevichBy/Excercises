@@ -19,7 +19,7 @@ public class RunGmailTest {
 			driver= new FirefoxDriver();
 
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
-
+			
 			TestFlowGmail.testFlowSteps(driver);
 
 			browser = BrowsersList.Browsers.Chrome;
@@ -31,7 +31,7 @@ public class RunGmailTest {
 			driver = new ChromeDriver();
 
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
-
+			
 			TestFlowGmail.testFlowSteps(driver);
 
 			browser = BrowsersList.Browsers.FireFox;

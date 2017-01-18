@@ -62,15 +62,21 @@ public class TestFlowGmail {
 		
 		ElementPresence.isElementPresent(driver, By.id("link_vsm") );
 		
+		Thread.sleep(1000);
+		
 		WebElement inboxButton = (new WebDriverWait(driver, 10)).until(
 				ExpectedConditions.presenceOfElementLocated(By.xpath("//span/a")));
 		
 		inboxButton.click();
 		
+		Thread.sleep(1000);
+		
 		WebElement firstMail = (new WebDriverWait(driver, 10)).until(
 				ExpectedConditions.presenceOfElementLocated(By.xpath("//td[4]/div[2]")));
 		
 		firstMail.click();
+		
+		Thread.sleep(500);
 		
 		driver.quit();
 	}
