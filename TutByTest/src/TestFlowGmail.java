@@ -16,7 +16,7 @@ public class TestFlowGmail {
 		emailField.sendKeys("WebDriverTest01");
 
 		WebElement nextbutton = (new WebDriverWait(driver, 10))
-				.until(ExpectedConditions.presenceOfElementLocated(By.id("Email")));
+				.until(ExpectedConditions.presenceOfElementLocated(By.id("signIn")));
 
 		nextbutton.submit();
 
@@ -25,10 +25,10 @@ public class TestFlowGmail {
 
 		passwdField.sendKeys("QA123456789");
 
-		WebElement enterButton = (new WebDriverWait(driver, 10))
-				.until(ExpectedConditions.presenceOfElementLocated(By.id("signIn")));
+		//WebElement enterButton = (new WebDriverWait(driver, 10))
+				//.until(ExpectedConditions.presenceOfElementLocated(By.id("signIn")));
 
-		enterButton.submit();
+		nextbutton.submit();
 
 		WebElement composeButton = (new WebDriverWait(driver, 10))
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@class='aic']/div/div")));
