@@ -25,9 +25,6 @@ public class TestFlowGmail {
 
 		passwdField.sendKeys("QA123456789");
 
-		//WebElement enterButton = (new WebDriverWait(driver, 10))
-				//.until(ExpectedConditions.presenceOfElementLocated(By.id("signIn")));
-
 		nextbutton.submit();
 
 		WebElement composeButton = (new WebDriverWait(driver, 10))
