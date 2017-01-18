@@ -1,7 +1,9 @@
 
 public class BrowsersList {
+	
+	public static final int WAITING = 10;
 
-	static enum Browsers {
+	public static enum Browsers {
 
 		FireFox, Chrome
 		

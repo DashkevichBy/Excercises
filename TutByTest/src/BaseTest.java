@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class RunTutByTest {
+public class BaseTest {
 
 	BrowsersList.Browsers browser = BrowsersList.Browsers.FireFox;
 
@@ -22,6 +22,8 @@ public class RunTutByTest {
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 
 			TestFlowTutBy.testFlowSteps(driver, browser);
+			
+			TestFlowGmail.testFlowSteps(driver);
 
 			browser = BrowsersList.Browsers.Chrome;
 
@@ -34,9 +36,10 @@ public class RunTutByTest {
 			driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 
 			TestFlowTutBy.testFlowSteps(driver, browser);
-
+			
+			TestFlowGmail.testFlowSteps(driver);
+			
 			break;
 		}
-
 	}
 }

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestFlowTutBy {
+	
+	private static final int WAITING = 10;
 
 	public static void testFlowSteps(WebDriver driver, BrowsersList.Browsers browser) throws InterruptedException {
 
@@ -19,7 +21,7 @@ public class TestFlowTutBy {
 
 			driver.switchTo().frame(driver.findElement(By.xpath("/html/body/iframe[1]")));
 
-			WebElement closePush = (new WebDriverWait(driver, 10))
+			WebElement closePush = (new WebDriverWait(driver, WAITING))
 					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='welcomeClose']")));
 
 			Actions builder = new Actions(driver);
@@ -30,7 +32,7 @@ public class TestFlowTutBy {
 
 		}
 
-		WebElement commercialLink = (new WebDriverWait(driver, 10)).until(ExpectedConditions
+		WebElement commercialLink = (new WebDriverWait(driver, WAITING)).until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//a[contains(@href, 'https://tutby.com/advert/price/')]")));
 
 		commercialLink.click();
@@ -53,6 +55,6 @@ public class TestFlowTutBy {
 
 		ElementPresence.isElementPresent(driver, By.id("search_from_str"));
 
-		driver.quit();
+		
 	}
 }

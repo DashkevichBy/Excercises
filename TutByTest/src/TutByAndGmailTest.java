@@ -3,14 +3,9 @@ public class TutByAndGmailTest {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		RunGmailTest gTest = new RunGmailTest();
-		
-		RunTutByTest tTest = new RunTutByTest();
+		BaseTest allTest = new BaseTest();
 
-		
-		gTest.runGmailTest();
-		
-		tTest.runTutByTest();
+		allTest.runTutByTest();
 	}
 
 }
