@@ -76,7 +76,7 @@ public class TestFlowGmail {
 		
 		firstMail.click();
 		
-		Thread.sleep(500);
+		Thread.sleep(500); 
 		
 		driver.quit();
 	}
