@@ -5,9 +5,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
 
-	BrowsersList.Browsers browser = BrowsersList.Browsers.FireFox;
-
-	public void runTutByTest() throws InterruptedException {
+	
+	public void runBaseTest(Browsers browser) throws InterruptedException  {
 		
 		WebDriver driver;
 
@@ -25,8 +24,7 @@ public class BaseTest {
 			
 			TestFlowGmail.testFlowSteps(driver);
 
-			browser = BrowsersList.Browsers.Chrome;
-
+			
 		case Chrome:
 
 			System.setProperty("webdriver.chrome.driver", "./src/Recources/chromedriver.exe");

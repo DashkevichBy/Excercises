@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,13 +12,13 @@ public class TestFlowTutBy {
 	
 	private static final int WAITING = 10;
 
-	public static void testFlowSteps(WebDriver driver, BrowsersList.Browsers browser) throws InterruptedException {
+	public static void testFlowSteps(WebDriver driver, Browsers browser) throws InterruptedException {
 
 		driver.get("https://www.tut.by/");
 
 		String mainWindowHandle = driver.getWindowHandle();
 
-		if (browser == BrowsersList.Browsers.Chrome) {
+		if (browser == Browsers.Chrome) {
 
 			driver.switchTo().frame(driver.findElement(By.xpath("/html/body/iframe[1]")));
 
