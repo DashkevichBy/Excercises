@@ -6,7 +6,7 @@ public class TutByAndGmailTest {
 
 		BaseTest allTest = new BaseTest();
 
-		allTest.runBaseTest(Browsers.FireFox);
+		//allTest.runBaseTest(Browsers.FireFox);
 
 		allTest.runBaseTest(Browsers.Chrome);
 

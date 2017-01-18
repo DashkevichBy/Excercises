@@ -1,4 +1,5 @@
 package com.BrowsersTest;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,6 @@ public class TestFlowGmail {
 
 		driver.get("https://gmail.com/");
 
-		 
 		WebElement emailField = (new WebDriverWait(driver, WAITING))
 				.until(ExpectedConditions.presenceOfElementLocated(By.id("Email")));
 
@@ -27,6 +27,7 @@ public class TestFlowGmail {
 		WebElement passwdField = (new WebDriverWait(driver, WAITING))
 				.until(ExpectedConditions.presenceOfElementLocated(By.id("Passwd")));
 
+				
 		passwdField.sendKeys("QA123456789");
 
 		nextbutton.submit();
@@ -55,30 +56,36 @@ public class TestFlowGmail {
 				ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@role='button' and text()='Send']")));
 
 		sendButton.click();
-		
-		WebElement viewMessage = (new WebDriverWait(driver, WAITING)).until(
-				ExpectedConditions.presenceOfElementLocated(By.id("link_vsm")));
-		
+
+		WebElement viewMessage = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.id("link_vsm")));
+
 		viewMessage.isDisplayed();
-		
-		ElementPresence.isElementPresent(driver, By.id("link_vsm") );
-		
-		Thread.sleep(1000);
-		
-		WebElement inboxButton = (new WebDriverWait(driver, WAITING)).until(
-				ExpectedConditions.presenceOfElementLocated(By.xpath("//span/a")));
+
+		ElementPresence.isElementPresent(driver, By.id("link_vsm"));
+
+		WebElement inboxButton = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span/a")));
+
+		inboxButton.click();
+
+		WebElement newMail = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//b[1][text()='Hello world']")));
+
+		newMail.isDisplayed();
+
+		WebElement firstMail = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[4]/div[2]")));
+
+		firstMail.click();
+
+		WebElement messageText = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[1][text()='Test Automation']")));
+
+		messageText.isDisplayed();
 		
 		inboxButton.click();
-		
-		Thread.sleep(1000);
-		
-		WebElement firstMail = (new WebDriverWait(driver, WAITING)).until(
-				ExpectedConditions.presenceOfElementLocated(By.xpath("//td[4]/div[2]")));
-		
-		firstMail.click();
-		
-		Thread.sleep(500); 
-		
+
 		driver.quit();
 	}
 }

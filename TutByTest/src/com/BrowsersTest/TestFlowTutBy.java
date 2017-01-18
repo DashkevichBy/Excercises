@@ -1,6 +1,6 @@
 package com.BrowsersTest;
-import java.util.ArrayList;
 
+import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestFlowTutBy {
-	
+
 	private static final int WAITING = 10;
 
 	public static void testFlowSteps(WebDriver driver, Browsers browser) throws InterruptedException {
@@ -28,6 +28,8 @@ public class TestFlowTutBy {
 
 			Actions builder = new Actions(driver);
 
+			closePush.isDisplayed();
+
 			builder.moveToElement(closePush).click().build().perform();
 
 			driver.switchTo().defaultContent();
@@ -37,13 +39,18 @@ public class TestFlowTutBy {
 		WebElement commercialLink = (new WebDriverWait(driver, WAITING)).until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//a[contains(@href, 'https://tutby.com/advert/price/')]")));
 
-		commercialLink.click();
+		commercialLink.isDisplayed();
 
-		Thread.sleep(1000);
+		commercialLink.click();
 
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 
 		driver.switchTo().window(tabs.get(1));
+
+		WebElement headerText = (new WebDriverWait(driver, WAITING))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[text()='Размещение рекламы']")));
+
+		headerText.isDisplayed();
 
 		String actualTitle = driver.getTitle();
 
@@ -57,6 +64,5 @@ public class TestFlowTutBy {
 
 		ElementPresence.isElementPresent(driver, By.id("search_from_str"));
 
-		
 	}
 }
