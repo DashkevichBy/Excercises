@@ -13,5 +13,4 @@ public class ActionsTest {
 		allTest.runBaseTest(Browsers.Chrome);
 
 	}
-
 }
