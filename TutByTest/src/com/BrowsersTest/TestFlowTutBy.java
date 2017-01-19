@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestFlowTutBy {
 
-	private static final int WAITING = 10;
-
 	public static void testFlowSteps(WebDriver driver, Browsers browser) throws InterruptedException {
 
 		driver.get("https://www.tut.by/");
@@ -23,7 +21,7 @@ public class TestFlowTutBy {
 
 			driver.switchTo().frame(driver.findElement(By.xpath("/html/body/iframe[1]")));
 
-			WebElement closePush = (new WebDriverWait(driver, WAITING))
+			WebElement closePush = (new WebDriverWait(driver, TutByAndGmailTest.WAITING))
 					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='welcomeClose']")));
 
 			Actions builder = new Actions(driver);
@@ -36,7 +34,7 @@ public class TestFlowTutBy {
 
 		}
 
-		WebElement commercialLink = (new WebDriverWait(driver, WAITING)).until(ExpectedConditions
+		WebElement commercialLink = (new WebDriverWait(driver, TutByAndGmailTest.WAITING)).until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//a[contains(@href, 'https://tutby.com/advert/price/')]")));
 
 		commercialLink.isDisplayed();
@@ -47,7 +45,7 @@ public class TestFlowTutBy {
 
 		driver.switchTo().window(tabs.get(1));
 
-		WebElement headerText = (new WebDriverWait(driver, WAITING))
+		WebElement headerText = (new WebDriverWait(driver, TutByAndGmailTest.WAITING))
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[text()='Размещение рекламы']")));
 
 		headerText.isDisplayed();

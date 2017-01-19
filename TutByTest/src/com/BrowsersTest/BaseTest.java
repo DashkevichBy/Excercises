@@ -19,9 +19,9 @@ public class BaseTest {
 
 			driver = new FirefoxDriver();
 
-			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 			TestFlowTutBy.testFlowSteps(driver, browser);
 
@@ -34,10 +34,10 @@ public class BaseTest {
 			System.setProperty("webdriver.chrome.driver", "./src/Recources/chromedriver.exe");
 
 			driver = new ChromeDriver();
-			
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-			driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 			TestFlowTutBy.testFlowSteps(driver, browser);
 
