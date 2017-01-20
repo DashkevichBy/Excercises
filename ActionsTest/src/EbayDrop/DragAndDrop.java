@@ -8,11 +8,8 @@ public class DragAndDrop {
 
 	public static void performDragAndDrop(Actions builder, WebElement dragElement, WebElement dropElement) {
 
-		Action dragAndDrop = builder.clickAndHold(dragElement)
-				.moveToElement(dropElement)
-				.release(dropElement)
-				.build();
-
-		dragAndDrop.perform();
+				
+	    builder.dragAndDrop(dragElement, dropElement).perform();
+		
 	}
 }
