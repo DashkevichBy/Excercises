@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [allSuites]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.CalculatorTest.AdditionTest">
+        <methods>
+          <include name="checkSimpleAddition"/>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.AdditionTest -->
+      <class name="com.CalculatorTest.SubtractionTest">
+        <methods>
+          <include name="checkZeroSubtraction"/>
+          <include name="createCalculatorInstance"/>
+          <include name="checkSimpleSubtraction"/>
+          <include name="tearDown"/>
+          <include name="checkSubtractionSelf"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.SubtractionTest -->
+      <class name="com.CalculatorTest.DivisionTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.DivisionTest -->
+      <class name="com.CalculatorTest.MultiplicationTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.MultiplicationTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="com.CalculatorTest.AdditionTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.AdditionTest -->
+      <class name="com.CalculatorTest.SubtractionTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.SubtractionTest -->
+      <class name="com.CalculatorTest.DivisionTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+          <include name="checkDivisionSelf"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.DivisionTest -->
+      <class name="com.CalculatorTest.MultiplicationTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+          <include name="checkMultiplicationOne"/>
+        </methods>
+      </class> <!-- com.CalculatorTest.MultiplicationTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [allSuites] -->

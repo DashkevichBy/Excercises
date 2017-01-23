@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ArithmeticTests]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.SimpleArithmeticTests.MultiplicationTest">
+        <methods>
+          <include name="checkMultiplicationOne"/>
+          <include name="tearDown"/>
+          <include name="createCalculatorInstance"/>
+        </methods>
+      </class> <!-- com.SimpleArithmeticTests.MultiplicationTest -->
+      <class name="com.SimpleArithmeticTests.DivisionTest">
+        <methods>
+          <include name="checkDivisionSelf"/>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.SimpleArithmeticTests.DivisionTest -->
+      <class name="com.SimpleArithmeticTests.SubtractionTest">
+        <methods>
+          <include name="checkSimpleSubtraction"/>
+          <include name="checkZeroSubtraction"/>
+          <include name="checkSubtractionSelf"/>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.SimpleArithmeticTests.SubtractionTest -->
+      <class name="com.SimpleArithmeticTests.AdditionTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+          <include name="checkSimpleAddition"/>
+        </methods>
+      </class> <!-- com.SimpleArithmeticTests.AdditionTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [ArithmeticTests] -->

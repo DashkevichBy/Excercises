@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MemoryRelatedTests]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.MemoryRelatedTests.SubtractionFromMemory">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkAddingZero"/>
+          <include name="createCalculatorInstance"/>
+          <include name="checkAddingNegativeValue"/>
+          <include name="checkSubtractNegativeValue"/>
+          <include name="subtractFromDefautValue"/>
+        </methods>
+      </class> <!-- com.MemoryRelatedTests.SubtractionFromMemory -->
+      <class name="com.MemoryRelatedTests.AdditionToMemory">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createCalculatorInstance"/>
+        </methods>
+      </class> <!-- com.MemoryRelatedTests.AdditionToMemory -->
+      <class name="com.MemoryRelatedTests.SetAndGetMemoTest">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.MemoryRelatedTests.SetAndGetMemoTest -->
+      <class name="com.MemoryRelatedTests.ClearingMemory">
+        <methods>
+          <include name="createCalculatorInstance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.MemoryRelatedTests.ClearingMemory -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [MemoryRelatedTests] -->

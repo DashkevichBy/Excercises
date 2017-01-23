@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="10" total="33" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MemoryRelatedTests" duration-ms="122" started-at="2017-01-23T14:39:47Z" finished-at="2017-01-23T14:39:47Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="122" started-at="2017-01-23T14:39:47Z" finished-at="2017-01-23T14:39:47Z">
+      <class name="com.MemoryRelatedTests.ClearingMemory">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.MemoryRelatedTests.ClearingMemory@77cd7a0]" name="createCalculatorInstance" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkDefaultStateMemory()[pri:0, instance:com.MemoryRelatedTests.ClearingMemory@77cd7a0]" name="checkDefaultStateMemory" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Defauilt State test" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDefaultStateMemory -->
+        <test-method status="PASS" signature="checkDoubleClearing()[pri:0, instance:com.MemoryRelatedTests.ClearingMemory@77cd7a0]" name="checkDoubleClearing" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Clearing already cleared memory test" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDoubleClearing -->
+        <test-method status="PASS" signature="checkVaueAfterClearing()[pri:0, instance:com.MemoryRelatedTests.ClearingMemory@77cd7a0]" name="checkVaueAfterClearing" duration-ms="2" started-at="2017-01-23T17:39:47Z" description="Clearing memory test" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkVaueAfterClearing -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MemoryRelatedTests.ClearingMemory@77cd7a0]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MemoryRelatedTests.ClearingMemory -->
+      <class name="com.MemoryRelatedTests.AdditionToMemory">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="createCalculatorInstance" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkAddOnePositiveValues()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="checkAddOnePositiveValues" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Adding two positive values test" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddOnePositiveValues -->
+        <test-method status="PASS" signature="checkAddPositiveValue()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="checkAddPositiveValue" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Adding one positive value test" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddPositiveValue -->
+        <test-method status="PASS" signature="checkAddingNegativeValue()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="checkAddingNegativeValue" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Adding negative value" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingNegativeValue -->
+        <test-method status="PASS" signature="checkAddingZero()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="checkAddingZero" duration-ms="2" started-at="2017-01-23T17:39:47Z" description="Adding zero" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingZero -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MemoryRelatedTests.AdditionToMemory@548e7350]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MemoryRelatedTests.AdditionToMemory -->
+      <class name="com.MemoryRelatedTests.SubtractionFromMemory">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="createCalculatorInstance" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="FAIL" signature="checkAddingNegativeValue()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="checkAddingNegativeValue" duration-ms="0" started-at="2017-01-23T17:39:47Z" description="Subtracting negative value from subtracted positive value" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Subtracting negative value from subtracted positive value result is wrong! expected [-4.0] but found [-8.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Subtracting negative value from subtracted positive value result is wrong! expected [-4.0] but found [-8.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.MemoryRelatedTests.SubtractionFromMemory.checkAddingNegativeValue(SubtractionFromMemory.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingNegativeValue -->
+        <test-method status="FAIL" signature="checkAddingZero()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="checkAddingZero" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Subtracting zero" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Subtracting zero result is wrong! expected [0.0] but found [-8.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Subtracting zero result is wrong! expected [0.0] but found [-8.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.MemoryRelatedTests.SubtractionFromMemory.checkAddingZero(SubtractionFromMemory.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingZero -->
+        <test-method status="FAIL" signature="checkSubtractNegativeValue()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="checkSubtractNegativeValue" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Subtract negative value test" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Subtract negative value result is wrong! expected [5.0] but found [2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Subtract negative value result is wrong! expected [5.0] but found [2.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.MemoryRelatedTests.SubtractionFromMemory.checkSubtractNegativeValue(SubtractionFromMemory.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubtractNegativeValue -->
+        <test-method status="FAIL" signature="subtractFromDefautValue()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="subtractFromDefautValue" duration-ms="78" started-at="2017-01-23T17:39:47Z" description="Sutracting from default value test" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Sutracting from default value result is wrong! expected [5.0] but found [-8.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Sutracting from default value result is wrong! expected [5.0] but found [-8.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.MemoryRelatedTests.SubtractionFromMemory.subtractFromDefautValue(SubtractionFromMemory.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtractFromDefautValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MemoryRelatedTests.SubtractionFromMemory@53b32d7]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MemoryRelatedTests.SubtractionFromMemory -->
+      <class name="com.MemoryRelatedTests.SetAndGetMemoTest">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="createCalculatorInstance" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkNegativeFloatSetMemory()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="checkNegativeFloatSetMemory" duration-ms="0" started-at="2017-01-23T17:39:47Z" description="Simple memory set" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNegativeFloatSetMemory -->
+        <test-method status="PASS" signature="checkNegativeIntegerSetMemory()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="checkNegativeIntegerSetMemory" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Negative memory set" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNegativeIntegerSetMemory -->
+        <test-method status="PASS" signature="checkPositiveIntegerSetMemory()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="checkPositiveIntegerSetMemory" duration-ms="4" started-at="2017-01-23T17:39:47Z" description="Simple memory set" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPositiveIntegerSetMemory -->
+        <test-method status="PASS" signature="checkZeroSetMemory()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="checkZeroSetMemory" duration-ms="0" started-at="2017-01-23T17:39:47Z" description="Zero memory set" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkZeroSetMemory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MemoryRelatedTests.SetAndGetMemoTest@5442a311]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MemoryRelatedTests.SetAndGetMemoTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- MemoryRelatedTests -->
+  <suite name="allSuites" duration-ms="0" started-at="2017-01-23T14:39:47Z" finished-at="2017-01-23T14:39:47Z">
+    <groups>
+    </groups>
+  </suite> <!-- allSuites -->
+  <suite name="ArithmeticTests" duration-ms="100" started-at="2017-01-23T14:39:47Z" finished-at="2017-01-23T14:39:47Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="100" started-at="2017-01-23T14:39:47Z" finished-at="2017-01-23T14:39:47Z">
+      <class name="com.SimpleArithmeticTests.DivisionTest">
+        <test-method status="PASS" signature="checkDivisionNegative()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="checkDivisionNegative" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Division -10/-2 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionNegative -->
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="createCalculatorInstance" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkDivisionPositive()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="checkDivisionPositive" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Division 10/2 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionPositive -->
+        <test-method status="PASS" signature="checkDivisionPositiveNegative()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="checkDivisionPositiveNegative" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Division 10/-2 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionPositiveNegative -->
+        <test-method status="FAIL" signature="checkDivisionSelf()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="checkDivisionSelf" duration-ms="0" started-at="2017-01-23T17:39:47Z" description="Division 10/10 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[10/10 operation result is wrong! expected [1.0] but found [10.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 10/10 operation result is wrong! expected [1.0] but found [10.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.DivisionTest.checkDivisionSelf(DivisionTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionSelf -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SimpleArithmeticTests.DivisionTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SimpleArithmeticTests.DivisionTest -->
+      <class name="com.SimpleArithmeticTests.AdditionTest">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="createCalculatorInstance" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkAdditionFloats()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="checkAdditionFloats" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Addition 1.5 + 0.33 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAdditionFloats -->
+        <test-method status="PASS" signature="checkAdditionNegative()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="checkAdditionNegative" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Addition 5 + -5 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAdditionNegative -->
+        <test-method status="FAIL" signature="checkSimpleAddition()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="checkSimpleAddition" duration-ms="2" started-at="2017-01-23T17:39:47Z" description="Addition 2 + 3 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[2 + 3 operation result is wrong! expected [5.0] but found [2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 2 + 3 operation result is wrong! expected [5.0] but found [2.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.AdditionTest.checkSimpleAddition(AdditionTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSimpleAddition -->
+        <test-method status="PASS" signature="checkZeroAddition()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="checkZeroAddition" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Addition 0 + 3 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkZeroAddition -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SimpleArithmeticTests.AdditionTest@26653222]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SimpleArithmeticTests.AdditionTest -->
+      <class name="com.SimpleArithmeticTests.MultiplicationTest">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="createCalculatorInstance" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="PASS" signature="checkMultiplicationFload()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="checkMultiplicationFload" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Multiplication 10*-1.5 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplicationFload -->
+        <test-method status="PASS" signature="checkMultiplicationNegative()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="checkMultiplicationNegative" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Multiplication -10*-2 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplicationNegative -->
+        <test-method status="FAIL" signature="checkMultiplicationOne()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="checkMultiplicationOne" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Multiplication 10*1 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[10*1 operation result is wrong! expected [10.0] but found [1.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 10*1 operation result is wrong! expected [10.0] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationOne(MultiplicationTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplicationOne -->
+        <test-method status="PASS" signature="checkMultiplicationPositive()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="checkMultiplicationPositive" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Multiplication 10*2 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplicationPositive -->
+        <test-method status="PASS" signature="checkMultiplicationZero()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="checkMultiplicationZero" duration-ms="1" started-at="2017-01-23T17:39:47Z" description="Multiplication 10*0 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplicationZero -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SimpleArithmeticTests.MultiplicationTest@4b9e13df]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SimpleArithmeticTests.MultiplicationTest -->
+      <class name="com.SimpleArithmeticTests.SubtractionTest">
+        <test-method status="PASS" signature="createCalculatorInstance()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="createCalculatorInstance" is-config="true" duration-ms="11" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCalculatorInstance -->
+        <test-method status="FAIL" signature="checkSimpleSubtraction()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="checkSimpleSubtraction" duration-ms="9" started-at="2017-01-23T17:39:47Z" description="Subtraction 2 - 3 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[2 - 3 operation result is wrong! expected [-1.0] but found [0.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 2 - 3 operation result is wrong! expected [-1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkSimpleSubtraction(SubtractionTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSimpleSubtraction -->
+        <test-method status="PASS" signature="checkSubtractionFloats()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="checkSubtractionFloats" duration-ms="4" started-at="2017-01-23T17:39:47Z" description="Subtraction 1.5 + 0.33 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubtractionFloats -->
+        <test-method status="PASS" signature="checkSubtractionNegative()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="checkSubtractionNegative" duration-ms="4" started-at="2017-01-23T17:39:47Z" description="Subtraction 5 - -5 check" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubtractionNegative -->
+        <test-method status="FAIL" signature="checkSubtractionSelf()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="checkSubtractionSelf" duration-ms="3" started-at="2017-01-23T17:39:47Z" description="Subtraction 1.1 - 1.1 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1.1 - 1.1 operation result is wrong! expected [0.0] but found [1.1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1.1 - 1.1 operation result is wrong! expected [0.0] but found [1.1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkSubtractionSelf(SubtractionTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubtractionSelf -->
+        <test-method status="FAIL" signature="checkZeroSubtraction()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="checkZeroSubtraction" duration-ms="4" started-at="2017-01-23T17:39:47Z" description="Subtraction 3 - 0 check" finished-at="2017-01-23T17:39:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[3 - 0 operation result is wrong! expected [3.0] but found [0.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 3 - 0 operation result is wrong! expected [3.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkZeroSubtraction(SubtractionTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkZeroSubtraction -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.SimpleArithmeticTests.SubtractionTest@5e5792a0]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-01-23T17:39:47Z" finished-at="2017-01-23T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SimpleArithmeticTests.SubtractionTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- ArithmeticTests -->
+</testng-results>

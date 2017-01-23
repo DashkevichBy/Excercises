@@ -1,0 +1,375 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 23 17:39:47 MSK 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (100 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SimpleArithmeticTests.DivisionTest.checkDivisionSelf()'><b>checkDivisionSelf</b><br>Test class: com.SimpleArithmeticTests.DivisionTest<br>Test method: Division 10/10 check</td>
+<td><div><pre>java.lang.AssertionError: 10/10 operation result is wrong! expected [1.0] but found [10.0]
+	at com.SimpleArithmeticTests.DivisionTest.checkDivisionSelf(DivisionTest.java:45)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1709366259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709366259'><pre>java.lang.AssertionError: 10/10 operation result is wrong! expected [1.0] but found [10.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.DivisionTest.checkDivisionSelf(DivisionTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.DivisionTest@3ffc5af1</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationOne()'><b>checkMultiplicationOne</b><br>Test class: com.SimpleArithmeticTests.MultiplicationTest<br>Test method: Multiplication 10*1 check</td>
+<td><div><pre>java.lang.AssertionError: 10*1 operation result is wrong! expected [10.0] but found [1.0]
+	at com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationOne(MultiplicationTest.java:44)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846412426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846412426'><pre>java.lang.AssertionError: 10*1 operation result is wrong! expected [10.0] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationOne(MultiplicationTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.MultiplicationTest@4b9e13df</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.AdditionTest.checkSimpleAddition()'><b>checkSimpleAddition</b><br>Test class: com.SimpleArithmeticTests.AdditionTest<br>Test method: Addition 2 + 3 check</td>
+<td><div><pre>java.lang.AssertionError: 2 + 3 operation result is wrong! expected [5.0] but found [2.0]
+	at com.SimpleArithmeticTests.AdditionTest.checkSimpleAddition(AdditionTest.java:44)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace916419490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace916419490'><pre>java.lang.AssertionError: 2 + 3 operation result is wrong! expected [5.0] but found [2.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.AdditionTest.checkSimpleAddition(AdditionTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.AdditionTest@26653222</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.SubtractionTest.checkSimpleSubtraction()'><b>checkSimpleSubtraction</b><br>Test class: com.SimpleArithmeticTests.SubtractionTest<br>Test method: Subtraction 2 - 3 check</td>
+<td><div><pre>java.lang.AssertionError: 2 - 3 operation result is wrong! expected [-1.0] but found [0.0]
+	at com.SimpleArithmeticTests.SubtractionTest.checkSimpleSubtraction(SubtractionTest.java:44)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1376400422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1376400422'><pre>java.lang.AssertionError: 2 - 3 operation result is wrong! expected [-1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkSimpleSubtraction(SubtractionTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.SubtractionTest@5e5792a0</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.SubtractionTest.checkSubtractionSelf()'><b>checkSubtractionSelf</b><br>Test class: com.SimpleArithmeticTests.SubtractionTest<br>Test method: Subtraction 1.1 - 1.1 check</td>
+<td><div><pre>java.lang.AssertionError: 1.1 - 1.1 operation result is wrong! expected [0.0] but found [1.1]
+	at com.SimpleArithmeticTests.SubtractionTest.checkSubtractionSelf(SubtractionTest.java:57)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1864350231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864350231'><pre>java.lang.AssertionError: 1.1 - 1.1 operation result is wrong! expected [0.0] but found [1.1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkSubtractionSelf(SubtractionTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.SubtractionTest@5e5792a0</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.SubtractionTest.checkZeroSubtraction()'><b>checkZeroSubtraction</b><br>Test class: com.SimpleArithmeticTests.SubtractionTest<br>Test method: Subtraction 3 - 0 check</td>
+<td><div><pre>java.lang.AssertionError: 3 - 0 operation result is wrong! expected [3.0] but found [0.0]
+	at com.SimpleArithmeticTests.SubtractionTest.checkZeroSubtraction(SubtractionTest.java:30)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735934726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1735934726'><pre>java.lang.AssertionError: 3 - 0 operation result is wrong! expected [3.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at com.SimpleArithmeticTests.SubtractionTest.checkZeroSubtraction(SubtractionTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.SubtractionTest@5e5792a0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SimpleArithmeticTests.AdditionTest.checkAdditionFloats()'><b>checkAdditionFloats</b><br>Test class: com.SimpleArithmeticTests.AdditionTest<br>Test method: Addition 1.5 + 0.33 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.AdditionTest@26653222</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.AdditionTest.checkAdditionNegative()'><b>checkAdditionNegative</b><br>Test class: com.SimpleArithmeticTests.AdditionTest<br>Test method: Addition 5 + -5 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.AdditionTest@26653222</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.DivisionTest.checkDivisionNegative()'><b>checkDivisionNegative</b><br>Test class: com.SimpleArithmeticTests.DivisionTest<br>Test method: Division -10/-2 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.DivisionTest@3ffc5af1</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.DivisionTest.checkDivisionPositive()'><b>checkDivisionPositive</b><br>Test class: com.SimpleArithmeticTests.DivisionTest<br>Test method: Division 10/2 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.DivisionTest@3ffc5af1</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.DivisionTest.checkDivisionPositiveNegative()'><b>checkDivisionPositiveNegative</b><br>Test class: com.SimpleArithmeticTests.DivisionTest<br>Test method: Division 10/-2 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.DivisionTest@3ffc5af1</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationFload()'><b>checkMultiplicationFload</b><br>Test class: com.SimpleArithmeticTests.MultiplicationTest<br>Test method: Multiplication 10*-1.5 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.MultiplicationTest@4b9e13df</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationNegative()'><b>checkMultiplicationNegative</b><br>Test class: com.SimpleArithmeticTests.MultiplicationTest<br>Test method: Multiplication -10*-2 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.MultiplicationTest@4b9e13df</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationPositive()'><b>checkMultiplicationPositive</b><br>Test class: com.SimpleArithmeticTests.MultiplicationTest<br>Test method: Multiplication 10*2 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.MultiplicationTest@4b9e13df</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.MultiplicationTest.checkMultiplicationZero()'><b>checkMultiplicationZero</b><br>Test class: com.SimpleArithmeticTests.MultiplicationTest<br>Test method: Multiplication 10*0 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.MultiplicationTest@4b9e13df</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.SubtractionTest.checkSubtractionFloats()'><b>checkSubtractionFloats</b><br>Test class: com.SimpleArithmeticTests.SubtractionTest<br>Test method: Subtraction 1.5 + 0.33 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.SubtractionTest@5e5792a0</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.SubtractionTest.checkSubtractionNegative()'><b>checkSubtractionNegative</b><br>Test class: com.SimpleArithmeticTests.SubtractionTest<br>Test method: Subtraction 5 - -5 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.SubtractionTest@5e5792a0</td></tr>
+<tr>
+<td title='com.SimpleArithmeticTests.AdditionTest.checkZeroAddition()'><b>checkZeroAddition</b><br>Test class: com.SimpleArithmeticTests.AdditionTest<br>Test method: Addition 0 + 3 check</td>
+<td></td>
+<td>0</td>
+<td>com.SimpleArithmeticTests.AdditionTest@26653222</td></tr>
+</table><p>
+</body>
+</html>
