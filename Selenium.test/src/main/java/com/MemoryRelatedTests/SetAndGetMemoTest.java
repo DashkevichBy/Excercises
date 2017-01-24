@@ -31,7 +31,7 @@ public class SetAndGetMemoTest {
 		double testValue = 0.0;
 		calc.setInMemory(testValue);
 
-		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Settin/getting "+testValue+"Value operation result is wrong!");
+		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Setting/getting "+testValue+"Value operation result is wrong!");
 
 	}
 	
@@ -41,7 +41,7 @@ public class SetAndGetMemoTest {
 		int testValue = 5;
 		calc.setInMemory(testValue);
 
-		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Settin/getting "+testValue+"Value operation result is wrong!");
+		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Setting/getting "+testValue+"Value operation result is wrong!");
 
 	}
 	
@@ -51,7 +51,7 @@ public class SetAndGetMemoTest {
 		int testValue = -1;
 		calc.setInMemory(testValue);
 
-		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Settin/getting "+testValue+"Value operation result is wrong!");
+		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Setting/getting "+testValue+"Value operation result is wrong!");
 
 	}
 	
@@ -61,7 +61,7 @@ public class SetAndGetMemoTest {
 		double testValue = -1.23;
 		calc.setInMemory(testValue);
 
-		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Settin/getting "+testValue+"Value operation result is wrong!");
+		Assert.assertEquals(calc.getMemoryResult(), testValue, delta, "Setting/getting "+testValue+"Value operation result is wrong!");
 
 	}
 

@@ -45,7 +45,7 @@ public class SubtractionTest {
 
 	}
 
-	@Test(description = "Subtraction 1.5 + 0.33 check")
+	@Test(description = "Subtraction 1.5 - 0.33 check")
 	public void checkSubtractionFloats() {
 
 		Assert.assertEquals(calc.subtraction(1.5, 0.33), 1.17, delta, "1.5 - 0.33 operation result is wrong!");
