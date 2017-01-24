@@ -20,7 +20,7 @@ public class SubtractionFromMemory {
 
 	@AfterClass
 	public void tearDown() {
-		System.out.println("Subtracting from memory completed\n");
+		System.out.println("Subtracting from memory test completed\n");
 
 	}
 	

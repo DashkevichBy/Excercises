@@ -20,7 +20,7 @@ public class AdditionToMemory {
 
 	@AfterClass
 	public void tearDown() {
-		System.out.println("Addition to memory completed\n");
+		System.out.println("Addition to memory test completed\n");
 
 	}
 	

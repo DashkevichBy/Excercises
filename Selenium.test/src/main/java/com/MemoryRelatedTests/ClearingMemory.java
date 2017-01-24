@@ -20,7 +20,7 @@ public class ClearingMemory {
 
 	@AfterClass
 	public void tearDown() {
-		System.out.println("Set memory test completed\n");
+		System.out.println("Clear memory test completed\n");
 
 	}
 
